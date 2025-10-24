@@ -314,7 +314,7 @@ body {
 
 .tracks-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-bottom: 2rem;
 }
@@ -324,7 +324,7 @@ body {
     color: white;
     padding: 2.5rem 2rem;
     border-radius: 20px;
-    text-align: center;
+    text-align: left;
     box-shadow: 0 10px 30px rgba(75, 169, 160, 0.3);
     transition: all 0.3s ease;
     border: 3px solid rgba(255,255,255,0.3);
@@ -351,12 +351,56 @@ body {
     font-size: 3.5rem;
     margin-bottom: 1rem;
     filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
+    text-align: center;
+    display: block;
 }
 
 .track h4 {
     font-size: 1.4rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
     font-weight: 700;
+    text-align: center;
+}
+
+.track-session-count {
+    opacity: 0.95;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-style: italic;
+}
+
+.track-sessions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.track-sessions li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    opacity: 0.95;
+}
+
+.track-sessions li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #F1FADA;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.track-sessions li strong {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
 }
 
 .track p {
