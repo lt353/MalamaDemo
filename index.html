@@ -9,46 +9,36 @@
 <body>
     <header class="main-header">
         <div class="logo-container">
-            <h1>Mālama Digital Care</h1>
+            <img src="images/logo.webp" alt="Mālama Digital Care" class="main-logo">
             <span class="demo-badge">DEMO</span>
         </div>
     </header>
 
     <main class="landing-page">
-        <div class="intro-text">
-            <h2>Meet Michelle</h2>
-            <p>Click to begin her digital journey</p>
-        </div>
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Meet Michelle</h1>
+                <p class="hero-subtitle">From confused to confident: Join Michelle on her digital transformation journey</p>
+                <p class="hero-description">Click Michelle below to discover how Mālama Digital Care helps kūpuna thrive in the digital age</p>
+            </div>
 
-        <div class="michelle-container" onclick="startDemo()">
-            <div class="michelle-character">
-                <!-- Michelle's head -->
-                <div class="head">
-                    <div class="hair"></div>
-                    <div class="face">
-                        <div class="eyes">
-                            <div class="eye left"></div>
-                            <div class="eye right"></div>
-                        </div>
-                        <div class="nose"></div>
-                        <div class="mouth"></div>
-                        <div class="glasses">
-                            <div class="lens left"></div>
-                            <div class="lens right"></div>
-                            <div class="bridge"></div>
-                        </div>
-                    </div>
+            <div class="michelle-container" onclick="startDemo()">
+                <div class="image-wrapper">
+                    <img src="images/confused-grandma-using-smart-phone-vector-illustration-white-background-cute-cartoon-character-74243429.webp" alt="Michelle - confused but ready to learn" class="michelle-image">
+                    <div class="click-pulse"></div>
                 </div>
-                <!-- Michelle's body -->
-                <div class="body">
-                    <div class="shoulders"></div>
+                <div class="name-tag">
+                    <span class="name">Michelle</span>
+                    <span class="tagline">Ready to learn</span>
                 </div>
             </div>
-            <div class="name-tag">Michelle</div>
-        </div>
 
-        <div class="cta-text">
-            <p class="pulse">👆 Click Michelle to start the demo</p>
+            <div class="cta-button-container">
+                <button class="cta-button" onclick="startDemo()">
+                    <span>Start Michelle's Journey</span>
+                    <span class="arrow">→</span>
+                </button>
+            </div>
         </div>
     </main>
 
