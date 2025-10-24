@@ -18,6 +18,7 @@ MalamaDemo/
 ├── styles.css              # All styling
 ├── script.js               # Navigation logic
 ├── session-data.js         # Michelle's journey data for each session
+├── images/                 # All image assets
 └── README.md              # This file
 ```
 
@@ -25,7 +26,7 @@ MalamaDemo/
 
 To add your Mālama Digital Care logo:
 
-1. Save your logo file in the project folder (e.g., `logo.png`)
+1. Save your logo file in the `images/` folder (e.g., `images/logo.png`)
 2. Open `styles.css`
 3. Find the `.logo-container h1` section (around line 30)
 4. Replace the text logo with an image by updating the HTML in all three files:
@@ -41,7 +42,7 @@ In `index.html`, `services.html`, and `session-detail.html`, change:
 To:
 ```html
 <div class="logo-container">
-    <img src="logo.png" alt="Mālama Digital Care" style="height: 50px;">
+    <img src="images/logo.png" alt="Mālama Digital Care" style="height: 50px;">
     <span class="demo-badge">DEMO</span>
 </div>
 ```
