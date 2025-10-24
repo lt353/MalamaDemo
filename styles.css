@@ -6,16 +6,17 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    background: linear-gradient(135deg, #4CA9A0 0%, #2B7A78 100%);
+    background: #000000;
     min-height: 100vh;
     color: #333;
 }
 
 /* Header */
 .main-header {
-    background: white;
+    background: #0a0a0a;
     padding: 1rem 2rem;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(76, 169, 160, 0.3);
+    border-bottom: 2px solid #4CA9A0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -35,14 +36,14 @@ body {
 }
 
 .demo-badge {
-    background: #E94B3C;
-    color: white;
+    background: #4CA9A0;
+    color: #000;
     padding: 0.6rem 1.2rem;
     border-radius: 25px;
     font-weight: 700;
     font-size: 1rem;
     letter-spacing: 2px;
-    box-shadow: 0 3px 10px rgba(233, 75, 60, 0.3);
+    box-shadow: 0 3px 10px rgba(76, 169, 160, 0.5);
 }
 
 /* Landing Page - New Hero Design */
@@ -180,7 +181,7 @@ body {
 }
 
 .cta-button {
-    background: linear-gradient(135deg, #E94B3C 0%, #D13527 100%);
+    background: linear-gradient(135deg, #4CA9A0 0%, #2B7A78 100%);
     color: white;
     border: none;
     padding: 1.5rem 3rem;
@@ -189,7 +190,7 @@ body {
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 30px rgba(233, 75, 60, 0.4);
+    box-shadow: 0 10px 30px rgba(76, 169, 160, 0.6);
     display: inline-flex;
     align-items: center;
     gap: 1rem;
@@ -197,7 +198,8 @@ body {
 
 .cta-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(233, 75, 60, 0.5);
+    box-shadow: 0 15px 40px rgba(76, 169, 160, 0.8);
+    background: linear-gradient(135deg, #5DBAB2 0%, #3C8B89 100%);
 }
 
 .cta-button .arrow {
@@ -234,10 +236,11 @@ body {
 }
 
 .services-diagram {
-    background: white;
+    background: #1a1a1a;
     border-radius: 30px;
     padding: 4rem 3rem;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    box-shadow: 0 20px 60px rgba(76, 169, 160, 0.3);
+    border: 2px solid #2a2a2a;
     position: relative;
 }
 
@@ -379,13 +382,13 @@ body {
 }
 
 .session-card {
-    background: white;
-    border: 3px solid #E8F4F3;
+    background: #1a1a1a;
+    border: 3px solid #2a2a2a;
     border-radius: 20px;
     overflow: hidden;
     cursor: pointer;
     transition: all 0.4s ease;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 20px rgba(76, 169, 160, 0.2);
     position: relative;
 }
 
@@ -439,14 +442,14 @@ body {
 }
 
 .session-content h4 {
-    color: #2B7A78;
+    color: #4CA9A0;
     font-size: 1.3rem;
     margin-bottom: 0.8rem;
     font-weight: 700;
 }
 
 .session-content p {
-    color: #666;
+    color: #b0b0b0;
     font-size: 1rem;
     margin-bottom: 1rem;
     line-height: 1.5;
@@ -455,7 +458,7 @@ body {
 .click-hint {
     display: block;
     font-size: 0.9rem;
-    color: #E94B3C;
+    color: #4CA9A0;
     font-weight: 700;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -475,7 +478,7 @@ body {
 }
 
 .back-button {
-    background: white;
+    background: transparent;
     color: #4CA9A0;
     border: 2px solid #4CA9A0;
     padding: 0.8rem 1.8rem;
@@ -489,22 +492,23 @@ body {
 
 .back-button:hover {
     background: #4CA9A0;
-    color: white;
+    color: #000;
     transform: translateX(-5px);
 }
 
 #session-content {
-    background: white;
+    background: #1a1a1a;
     border-radius: 25px;
     padding: 3rem;
-    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 50px rgba(76, 169, 160, 0.3);
+    border: 2px solid #2a2a2a;
 }
 
 .session-header {
     text-align: center;
     margin-bottom: 3rem;
     padding-bottom: 2rem;
-    border-bottom: 3px solid #E8F4F3;
+    border-bottom: 3px solid #2a2a2a;
 }
 
 .session-icon-large {
@@ -531,22 +535,22 @@ body {
 }
 
 .journey-section.pain-points {
-    background: linear-gradient(135deg, #FFF5F5 0%, #FFE8E8 100%);
+    background: linear-gradient(135deg, #2a1a1a 0%, #3a2020 100%);
     border-left: 6px solid #E94B3C;
 }
 
 .journey-section.how-we-help {
-    background: linear-gradient(135deg, #E8F4F3 0%, #D4EBE9 100%);
+    background: linear-gradient(135deg, #1a2a2a 0%, #1a3a38 100%);
     border-left: 6px solid #4CA9A0;
 }
 
 .journey-section.gains {
-    background: linear-gradient(135deg, #F0FFF4 0%, #D4F4DD 100%);
-    border-left: 6px solid #38A169;
+    background: linear-gradient(135deg, #1a2a1a 0%, #1a3a22 100%);
+    border-left: 6px solid #5DBF7D;
 }
 
 .journey-section.why-continues {
-    background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);
+    background: linear-gradient(135deg, #2a2a1a 0%, #3a3820 100%);
     border-left: 6px solid #F59E0B;
 }
 
@@ -562,7 +566,7 @@ body {
 }
 
 .section-header h3 {
-    color: #333;
+    color: #e0e0e0;
     font-size: 1.8rem;
     font-weight: 700;
 }
@@ -578,6 +582,7 @@ body {
     position: relative;
     font-size: 1.1rem;
     line-height: 1.7;
+    color: #d0d0d0;
 }
 
 .journey-list li:before {
@@ -591,9 +596,9 @@ body {
 .continue-text {
     font-size: 1.15rem;
     line-height: 1.9;
-    color: #333;
+    color: #d0d0d0;
     padding: 1.5rem;
-    background: rgba(255,255,255,0.5);
+    background: rgba(76, 169, 160, 0.1);
     border-radius: 10px;
 }
 
@@ -602,7 +607,7 @@ body {
     text-align: center;
     margin-top: 3rem;
     padding-top: 2rem;
-    border-top: 3px solid #E8F4F3;
+    border-top: 3px solid #2a2a2a;
 }
 
 .btn-primary {
