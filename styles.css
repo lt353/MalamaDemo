@@ -512,7 +512,8 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     text-align: center;
-    min-width: 140px;
+    width: 200px;
+    flex-shrink: 0;
 }
 
 .session-item:hover {
