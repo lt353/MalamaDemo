@@ -5,9 +5,14 @@ function startDemo() {
     window.location.href = 'services.html';
 }
 
-// Navigate to session detail page
+// Navigate to session detail page or special demo
 function showSessionDetail(sessionId) {
-    window.location.href = `session-detail.html?session=${sessionId}`;
+    // Password class has special interactive mobile demo
+    if (sessionId === 'passwords') {
+        window.location.href = 'password-demo.html';
+    } else {
+        window.location.href = `session-detail.html?session=${sessionId}`;
+    }
 }
 
 // Add smooth scroll behavior
