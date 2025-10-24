@@ -1,4 +1,4 @@
-// Session data for Michelle's journey through each course
+// Class data for Michelle's journey through each course
 const sessionData = {
     device: {
         title: "Your Device Basics",
@@ -21,7 +21,7 @@ const sessionData = {
             "She's created her own folder system to keep things organized",
             "Most importantly: she's no longer afraid to explore and try new things"
         ],
-        whySheContinues: "After conquering her device basics, Michelle realized that technology doesn't have to be scary. She saw how these skills opened doors to staying connected with her grandchildren and decided to continue with the Email Essentials session to communicate with them more easily."
+        whySheContinues: "After conquering her device basics, Michelle realized that technology doesn't have to be scary. She saw how these skills opened doors to staying connected with her grandchildren and decided to continue with the Email Essentials class to communicate with them more easily."
     },
     email: {
         title: "Email Essentials",
@@ -44,7 +44,7 @@ const sessionData = {
             "She never misses important medical appointments thanks to email alerts",
             "She's become the family's go-to person for sharing digital photos via email"
         ],
-        whySheContinues: "With email mastered, Michelle became aware of suspicious messages in her inbox. She wanted to learn more about protecting herself online, which led her to enroll in the 'Protect Yourself' session to understand scams and online safety."
+        whySheContinues: "With email mastered, Michelle became aware of suspicious messages in her inbox. She wanted to learn more about protecting herself online, which led her to enroll in the 'Protect Yourself' class to understand scams and online safety."
     },
     protect: {
         title: "Protect Yourself",
@@ -67,7 +67,7 @@ const sessionData = {
             "She knows exactly what to do when something feels 'off' - pause and verify",
             "She's regained confidence in using technology without constant fear"
         ],
-        whySheContinues: "Feeling empowered and secure online, Michelle wanted to use technology to connect more deeply with her family. She enrolled in Communication Skills to learn how to video chat with her grandchildren and share moments in real-time."
+        whySheContinues: "Feeling empowered and secure online, Michelle wanted to use technology to connect more deeply with her family. She enrolled in the Communication Skills class to learn how to video chat with her grandchildren and share moments in real-time."
     },
     communication: {
         title: "Communication Skills",
@@ -90,7 +90,7 @@ const sessionData = {
             "She sends good morning texts with photos to her children every day",
             "She joined a virtual book club and connects with friends across the country"
         ],
-        whySheContinues: "As Michelle created more accounts for different communication platforms, she realized she was struggling to remember all her passwords. She'd write them on sticky notes or use the same password everywhere. This prompted her to take the Password Management session to learn a better system."
+        whySheContinues: "As Michelle created more accounts for different communication platforms, she realized she was struggling to remember all her passwords. She'd write them on sticky notes or use the same password everywhere. This prompted her to take the Password Management class to learn a better system."
     },
     passwords: {
         title: "Password Management",
@@ -117,11 +117,11 @@ const sessionData = {
     }
 };
 
-// Function to load session content
+// Function to load class content
 function loadSessionContent(sessionId) {
     const session = sessionData[sessionId];
     if (!session) {
-        document.getElementById('session-content').innerHTML = '<p>Session not found.</p>';
+        document.getElementById('session-content').innerHTML = '<p>Class not found.</p>';
         return;
     }
 
@@ -144,7 +144,7 @@ function loadSessionContent(sessionId) {
         <div class="journey-section how-we-help">
             <div class="section-header">
                 <span class="section-icon">🤝</span>
-                <h3>How We Help - During Our Sessions</h3>
+                <h3>How We Help - During Our Classes</h3>
             </div>
             <ul class="journey-list">
                 ${session.howWeHelp.map(point => `<li>${point}</li>`).join('')}

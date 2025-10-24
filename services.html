@@ -10,14 +10,22 @@
     <header class="main-header">
         <div class="logo-container">
             <img src="images/logo.webp" alt="Mālama Digital Care" class="main-logo">
-            <span class="demo-badge">DEMO</span>
+            <div class="nav-buttons">
+                <button class="nav-btn" onclick="window.history.back()" title="Go back one page">
+                    <span>← Back</span>
+                </button>
+                <button class="nav-btn restart-btn" onclick="window.location.href='index.html'" title="Restart Michelle's journey">
+                    <span>⟲ Restart Journey</span>
+                </button>
+                <span class="demo-badge">DEMO</span>
+            </div>
         </div>
     </header>
 
     <main class="services-page">
         <div class="page-title">
             <h2>Our Services for Michelle</h2>
-            <p class="subtitle">Building confidence through personalized one-on-one sessions</p>
+            <p class="subtitle">Building confidence through personalized classes</p>
         </div>
 
         <div class="services-diagram">
@@ -27,7 +35,7 @@
                 <p class="foundation-description">Where everyone starts to build up their base knowledge before they move on to more specialized knowledge</p>
                 <div class="sessions-timeline">
                     <div class="session-item" onclick="showSessionDetail('device')">
-                        <div class="session-number">Session 1</div>
+                        <div class="session-number">Class 1</div>
                         <div class="session-mini-content">
                             <h5>Your Device Basics</h5>
                         </div>
@@ -36,7 +44,7 @@
                     <div class="timeline-connector">→</div>
 
                     <div class="session-item" onclick="showSessionDetail('email')">
-                        <div class="session-number">Session 2</div>
+                        <div class="session-number">Class 2</div>
                         <div class="session-mini-content">
                             <h5>Email Essentials</h5>
                         </div>
@@ -45,7 +53,7 @@
                     <div class="timeline-connector">→</div>
 
                     <div class="session-item" onclick="showSessionDetail('protect')">
-                        <div class="session-number">Session 3</div>
+                        <div class="session-number">Class 3</div>
                         <div class="session-mini-content">
                             <h5>Protect Yourself</h5>
                         </div>
@@ -54,7 +62,7 @@
                     <div class="timeline-connector">→</div>
 
                     <div class="session-item" onclick="showSessionDetail('communication')">
-                        <div class="session-number">Session 4</div>
+                        <div class="session-number">Class 4</div>
                         <div class="session-mini-content">
                             <h5>Communication Skills</h5>
                         </div>
@@ -63,7 +71,7 @@
                     <div class="timeline-connector">→</div>
 
                     <div class="session-item" onclick="showSessionDetail('passwords')">
-                        <div class="session-number">Session 5</div>
+                        <div class="session-number">Class 5</div>
                         <div class="session-mini-content">
                             <h5>Password Management</h5>
                         </div>
@@ -82,7 +90,7 @@
                     <div class="track cyber-safety">
                         <div class="track-icon">🔒</div>
                         <h4>Cyber Safety Track</h4>
-                        <p>3-4 sessions on staying safe online</p>
+                        <p>3-4 classes on staying safe online</p>
                     </div>
                     <div class="track health-tech">
                         <div class="track-icon">💊</div>
